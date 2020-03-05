@@ -4,12 +4,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './App.css';
 
-import NavBar from "./components/layout/NavBar";
-
+import Pokemon from "./components/pokemon/Pokemon";
 function App() {
   return (
     <div className="App">
-      <NavBar/>
+        <Pokemon />
     </div>
   );
 }
