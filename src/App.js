@@ -1,16 +1,20 @@
-import React from 'react';
+import React, {Component} from 'react';
+import PokeList from "./components/PokeList";
+import './App.css'
 
-import 'bootstrap/dist/css/bootstrap.min.css';
+class App extends Component {
+    constructor() {
+        super();
+        this.state = {};
+    }
 
-import './App.css';
-
-import Pokemon from "./components/pokemon/Pokemon";
-function App() {
-  return (
-    <div className="App">
-        <Pokemon />
-    </div>
-  );
+    render() {
+        return (
+            <div className="App">
+               <PokeList />
+            </div>
+        );
+    }
 }
 
 export default App;
