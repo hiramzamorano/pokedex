@@ -2,15 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7cd28900-6e4a-49b2-b721-cc8e8746b90a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/PokeCell.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/styles/PokeCell.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/favicon2.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/DetailView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Pokemon.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/layout/NavBar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/styles/DetailView.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/styles/NavBar.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/PokeList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PokeList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/styles/PokeList.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/styles/PokeList.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +54,11 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
+    </key>
+  </component>
   <component name="RunManager" selected="npm.npm start">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
       <method v="2" />
@@ -77,7 +88,7 @@
       <workItem from="1583282243093" duration="2698000" />
       <workItem from="1583356136825" duration="6072000" />
       <workItem from="1583440844268" duration="4636000" />
-      <workItem from="1583451127316" duration="4326000" />
+      <workItem from="1583451127316" duration="10342000" />
     </task>
     <servers />
   </component>
@@ -89,6 +100,14 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="320" y="127" key="#ESLint/-1920.-49.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1583356422047" />
+    <state x="458" y="215" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1583529674492">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="458" y="215" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1920.-49.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1583529674492" />
+    <state x="308" y="203" key="IDE.errors.dialog" timestamp="1583529789786">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="308" y="203" key="IDE.errors.dialog/-1920.-49.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1583529789786" />
     <state x="221" y="100" key="SettingsEditor" timestamp="1583284153842">
       <screen x="0" y="23" width="1440" height="877" />
     </state>

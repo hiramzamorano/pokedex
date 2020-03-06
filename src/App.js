@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import PokeList from "./components/PokeList";
+import DetailView from "./components/DetailView";
+import NavBar from "./components/layout/NavBar";
 import './App.css'
 
 class App extends Component {
@@ -8,10 +10,18 @@ class App extends Component {
         this.state = {};
     }
 
+
+    handleOnClick() {
+      console.log("HI");
+    }
+
     render() {
         return (
             <div className="App">
-               <PokeList />
+                <div className="Pokedex">
+               <PokeList handleOnClick={this.handleOnClick}/>
+               <DetailView pokemon={this.state.pokemon}/>
+                </div>
             </div>
         );
     }
