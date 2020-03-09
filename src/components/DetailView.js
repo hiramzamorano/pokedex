@@ -7,8 +7,8 @@ const DetailView = () => {
         <section className="detail-view">
             <img className='sprite-image' />
             <div className='data-wrapper'>
-                <h1 className='data-name'></h1>
-                <p className="data-char"></p>
+                <h1 className='data-name'>Name: </h1>
+                <p className="data-char">Stats: </p>
             </div>
         </section>
     )
