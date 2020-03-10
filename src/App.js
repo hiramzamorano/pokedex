@@ -1,14 +1,14 @@
 import React, {Component} from 'react';
 import Pokemon from "./components/Pokemon";
 import PokeList from "./components/PokeList";
-import Paddle from "./components/Paddle";
 import DetailView from "./components/DetailView";
 import './App.css'
 
 class App extends Component {
-    constructor() {
-        super();
-        this.state = { i : 1,  pokemon: {} };
+    constructor(props) {
+        super(props);
+        this.state = { i : 1,  pokemon: {}, showing: false };
+        this.showDetails = this.showDetails.bind(this);
         this.arrowRight = this.arrowRight.bind(this);
         this.arrowLeft = this.arrowLeft.bind(this);
     }
@@ -18,8 +18,8 @@ class App extends Component {
     }
 
     makeRequest(index){
-        const API = "https://pokeapi.co/api/v2/pokemon/";
-        fetch(API+index)
+        const API_URL = "https://pokeapi.co/api/v2/pokemon/";
+        fetch(API_URL+index)
             .then(res => res.json())
             .then(data => {
                 const pokemon = new Pokemon(data);
@@ -39,13 +39,27 @@ class App extends Component {
         }
     }
 
+    showDetails () {
+        if (this.state.showing){
+            this.setState({showing : false});
+        } else {
+            this.setState({showing: true})
+        }
+
+    }
+
+
+
     render() {
         console.log(this.state.pokemon);
         return (
             <div className="App">
                 <div className="Pokedex">
-                    <PokeList pokemon={this.state.pokemon} arrowRight={this.arrowRight} arrowLeft={this.arrowLeft}/>
-                     <DetailView pokemon={this.state.pokemon} />
+                    <PokeList showDetails={this.showDetails} pokemon={this.state.pokemon} arrowRight={this.arrowRight} arrowLeft={this.arrowLeft}/>
+                    { this.state.showing ?
+                        <DetailView pokemon={this.state.pokemon} showDetails={this.showDetails}/>
+                        : null
+                    }
                 </div>
             </div>
         );

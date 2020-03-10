@@ -1,15 +1,14 @@
 import React from 'react';
-import Paddle from "./Paddle";
 import './styles/PokeCell.css';
 
 
-const PokeCell = ({pokemon}) => {
+const PokeCell = ({pokemon,showDetails}) => {
     return (
         <div >
-            <button className="poke-cell" >
+            <button className="poke-cell" onClick={showDetails} >
                 <h1>{pokemon.name}</h1>
-                <img src={pokemon.sprite} alt="Pokemon"/>
-            </button>
+                <img src={pokemon.image} alt="Pokemon"/>
+            </button >
         </div>
     )
 };
