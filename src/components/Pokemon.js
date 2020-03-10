@@ -8,6 +8,10 @@ class Pokemon {
         this.height = data.height;
         this.weight = data.weight;
         this.experience = data.base_experience;
+        this.moves1 = data.moves[0].move.name;
+        this.moves2 = data.moves[1].move.name;
+        this.moves3 = data.moves[2].move.name;
+
     }
 }
 

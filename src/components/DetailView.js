@@ -12,9 +12,10 @@ const DetailView = ({pokemon, showDetails}) => {
 
             <div className='data-wrapper'>
                 <h2 className='data-name'>Type: {pokemon.type}</h2>
-                <p className="data-char">Base Experience: {pokemon.experience}</p>
-                <p className="data-char">Height: {pokemon.height}</p>
-                <p className="data-char">Weight: {pokemon.weight}</p>
+                <p className="data-char"><span>Base Experience: </span> {pokemon.experience}</p>
+                <p className="data-char"><span>Height:</span> {pokemon.height}</p>
+                <p className="data-char"><span>Weight:</span> {pokemon.weight}</p>
+                <p className="data-char"><span>Moves:</span> {pokemon.moves1}, {pokemon.moves2}, {pokemon.moves3} </p>
 
             </div>
             <button className="back-btn" onClick={showDetails}>Back</button>
